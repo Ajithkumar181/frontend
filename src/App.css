@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* In App.css */
+body {
+  background: linear-gradient(135deg, #f2f4f7, #e1e9f0); /* Subtle gradient from light gray to a soft blue */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+  color: #333; /* Dark text for good readability */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrapper {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 1200px; /* Maximum width */
+  min-height: 80vh; /* Ensures the content area is properly sized */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2575fc;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(135deg, #4e73df, #2575fc); /* Gradient with blue shades for a more modern look */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff; /* White background for the main container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for a professional feel */
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #2575fc;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input {
+  padding: 12px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #2575fc;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background: #2575fc;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Messages */
+.message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #6a11cb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #2575fc;
+  color: white;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  form input {
+    width: 90%;
+  }
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

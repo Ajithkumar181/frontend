@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Signup Form Container */
+.signup {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #4e73df, #2575fc); /* Polished gradient for signup */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for professionalism */
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.signup h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600; /* Stronger font for emphasis */
+    color: #fff;
+}
+
+/* Form Styling */
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.signup label {
+    font-size: 1rem;
+    color: #e2e2e2; /* Light color for readability */
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.signup input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3); /* Slightly opaque background */
+    color: #fff;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    outline: none;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.signup input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #2575fc;
+}
+
+/* Button Styling */
+.signup button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #2575fc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    width: 85%;
+    max-width: 400px;
+}
+
+.signup button:hover {
+    background: #6a11cb;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.signup button:active {
+    transform: scale(0.98);
+}
+
+/* Error Message Styling */
+.signup p {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #ffdddd;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation for the message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .signup input {
+        width: 90%;
+    }
+
+    .signup button {
+        width: 90%;
+    }
+}
